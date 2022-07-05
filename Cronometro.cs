@@ -11,6 +11,30 @@ class Program
         Menu();
     }
     
+     static void Menu()
+    {
+        
+        Console.WriteLine("Coloque a opção que deseja: ");
+        Console.WriteLine("Opção 1: Iniciar.");
+        Console.WriteLine("Opção 2: Fechar.");
+        
+        int opcao = int.Parse(Console.ReadLine());
+        switch (opcao)
+        {
+            case 1: 
+                Iniciar(); 
+                break;
+
+            case 2: 
+                Console.WriteLine("Fim do Aplicativo."); 
+                Environment.Exit(0);
+                break;
+        }
+        
+
+    }
+    
+    
     static void Iniciar()
     {
         Console.WriteLine("****************");
@@ -34,28 +58,7 @@ class Program
         
         
     }
-    static void Menu()
-    {
-        
-        Console.WriteLine("Coloque a opção que deseja: ");
-        Console.WriteLine("Opção 1: Iniciar.");
-        Console.WriteLine("Opção 2: Fechar.");
-        
-        int opcao = int.Parse(Console.ReadLine());
-        switch (opcao)
-        {
-            case 1: 
-                Iniciar(); 
-                break;
-
-            case 2: 
-                Console.WriteLine("Fim do Aplicativo."); 
-                Environment.Exit(0);
-                break;
-        }
-        
-
-    }
+   
     
 
 
